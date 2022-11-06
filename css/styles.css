@@ -15,7 +15,22 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* ----------------шапка---------------- */
+/* ------------------шапка------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 .style {
   list-style: none;
@@ -26,7 +41,15 @@
   font-style: normal;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(241, 241, 241, 0.6);
+}
+
 .link-logo {
+  margin-right: 93px;
+
   color: #2196f3;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -54,6 +77,14 @@
   color: #2196f3;
 }
 
+.site-nav {
+  display: flex;
+  gap: 50px;
+  margin-top: 32px;
+  margin-right: 344px;
+  margin-bottom: 32px;
+}
+
 .auth-nav .contact {
   font-weight: 500;
   font-size: 14px;
@@ -67,12 +98,26 @@
   color: var(--accent);
 }
 
-/* ---------------герой---------------- */
+.auth-nav {
+  display: flex;
+  gap: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* -----------------герой------------------- */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
 }
 
 .hero-title {
+  padding-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -84,6 +129,12 @@
 }
 
 .button {
+  padding: 10px 32px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px #2196f3;
+
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -97,15 +148,24 @@
   cursor: pointer;
 }
 
-/* ------------------секції--------------*/
+/* ------------------секції------------------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .container {
-  display: inline-block;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   outline: 2px solid tomato;
 }
 
@@ -136,17 +196,80 @@
   color: var(--brand-text-color);
 }
 
-/* ---------------пропозиції------------ */
+/* ---------------пропозиції---------------- */
+.offer {
+  display: flex;
+  padding-top: 94px;
+  gap: 30px;
+}
+
+.title-offer {
+  margin-bottom: 10px;
+}
 
 /* ---------------приміри робіт------------  */
+.section-work {
+  padding-top: 94px;
+}
 
-/* ---------------команда------------  */
+.section-work-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+/* ---------------команда------------------  */
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.our-team-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-item .title {
+  margin-top: 30px;
+}
+.section-item .text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 /* ---------------фільрт кнопок------------  */
+.nav-filtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 
-/* --------------портфоліо------------- */
+/* .nav-button {
+  padding: 6px 22px;
+} */
+
+/* --------------портфоліо------------------ */
 .item .text {
   color: var(--brand-text-color);
+}
+
+.portfoloi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .nav .button-filtr {
@@ -157,6 +280,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border: transparent;
   background-color: #f5f4fa;
   color: #212121;
 }
@@ -165,9 +290,11 @@
 .nav .button-filtr:focus {
   background-color: var(--accent);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio .portfoloi-title {
+.portfolio .portfolio-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -180,7 +307,21 @@
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
 }
-/* ------------підвал------------------ */
+
+/* ----------------підвал------------------ */
+
+.container-logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.container-address {
+  padding-bottom: 60px;
+}
+.address-item {
+  margin-bottom: 9px;
+}
 
 .address-link .link:hover,
 .address-link .link:focus {
