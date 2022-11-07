@@ -32,6 +32,12 @@ ul {
   padding: 0;
 }
 
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .style {
   list-style: none;
 }
@@ -150,23 +156,17 @@ ul {
 
 /* ------------------секції------------------*/
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team {
@@ -197,10 +197,24 @@ ul {
 }
 
 /* ---------------пропозиції---------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .offer {
   display: flex;
-  padding-top: 94px;
   gap: 30px;
+}
+
+.section-padding {
+  padding-bottom: 0;
 }
 
 .title-offer {
@@ -208,9 +222,6 @@ ul {
 }
 
 /* ---------------приміри робіт------------  */
-.section-work {
-  padding-top: 94px;
-}
 
 .section-work-item {
   display: flex;
@@ -220,11 +231,6 @@ ul {
 }
 
 /* ---------------команда------------------  */
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
-}
 
 .our-team-section {
   margin-top: 50px;
@@ -253,13 +259,9 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 50px;
 }
-
-/* .nav-button {
-  padding: 6px 22px;
-} */
 
 /* --------------портфоліо------------------ */
 .item .text {
@@ -270,6 +272,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  /* padding-bottom: 94px; */
 }
 
 .nav .button-filtr {
@@ -284,6 +287,8 @@ ul {
   border: transparent;
   background-color: #f5f4fa;
   color: #212121;
+
+  padding: 6px 22px;
 }
 
 .nav .button-filtr:hover,
@@ -299,6 +304,9 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 
 .portfolio .text {
@@ -306,6 +314,14 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
+
+  padding-bottom: 20px;
+}
+
+.portfolio-item {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /* ----------------підвал------------------ */
@@ -337,14 +353,14 @@ ul {
 
 .background .link-address {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .background .link-contact {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
