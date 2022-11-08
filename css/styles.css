@@ -67,6 +67,9 @@ ul {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -86,12 +89,14 @@ ul {
 .site-nav {
   display: flex;
   gap: 50px;
-  margin-top: 32px;
-  margin-right: 344px;
-  margin-bottom: 32px;
+  /* margin-top: 32px; */
+  /* margin-right: 344px; */
+  /* margin-bottom: 32px; */
 }
 
 .auth-nav .contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -107,8 +112,9 @@ ul {
 .auth-nav {
   display: flex;
   gap: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-left: auto;
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
 }
 
 /* -----------------герой------------------- */
@@ -246,9 +252,11 @@ ul {
 }
 
 .section-item .title {
+  text-align: center;
   margin-top: 30px;
 }
 .section-item .text {
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
 }
