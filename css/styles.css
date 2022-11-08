@@ -50,11 +50,16 @@ ul {
 .container-header {
   display: flex;
   align-items: center;
+}
+
+.border {
   border-bottom: 2px solid rgba(241, 241, 241, 0.6);
 }
 
 .link-logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   color: #2196f3;
   font-family: "Raleway", sans-serif;
@@ -175,9 +180,9 @@ ul {
   padding-bottom: 94px;
 }
 
-.our-team {
+/* .our-team {
   background-color: #f5f4fa;
-}
+} */
 
 .section .section-title {
   font-size: 36px;
@@ -219,8 +224,8 @@ ul {
   gap: 30px;
 }
 
-.section-padding {
-  padding-bottom: 0;
+.offer li {
+  flex-basis: 270px;
 }
 
 .title-offer {
@@ -236,6 +241,11 @@ ul {
   gap: 30px;
 }
 
+.section-padding {
+  padding-top: 0;
+  padding-bottom: 94;
+}
+
 /* ---------------команда------------------  */
 
 .our-team-section {
@@ -246,11 +256,12 @@ ul {
 }
 
 .section-item {
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+/* 
 .section-item .title {
   text-align: center;
   margin-top: 30px;
@@ -259,6 +270,21 @@ ul {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
+} */
+
+.title-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.title-text .title {
+  margin-bottom: 10px;
+}
+
+.team-padding {
+  background-color: #f5f4fa;
+  padding-top: 94px;
 }
 
 /* ---------------фільрт кнопок------------  */
@@ -268,7 +294,7 @@ ul {
   align-items: center;
   gap: 8px;
   /* padding-top: 94px; */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* --------------портфоліо------------------ */
@@ -312,9 +338,6 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-
-  padding-top: 20px;
-  padding-bottom: 4px;
 }
 
 .portfolio .text {
@@ -322,11 +345,10 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
-
-  padding-bottom: 20px;
 }
 
 .portfolio-item {
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -336,11 +358,14 @@ ul {
 
 .container-logo {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .container-address {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .address-item {
