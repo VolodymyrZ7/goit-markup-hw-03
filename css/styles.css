@@ -53,7 +53,7 @@ ul {
 }
 
 .border {
-  border-bottom: 2px solid rgba(241, 241, 241, 0.6);
+  border-bottom: 1px solid #ececec;
 }
 
 .link-logo {
@@ -193,16 +193,16 @@ ul {
 }
 
 .section .title {
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
 .section .text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 16px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
 }
@@ -338,6 +338,8 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+
+  margin-bottom: 4px;
 }
 
 .portfolio .text {
